@@ -8,11 +8,9 @@
 <meta name="author" content="simonLau" />
 <!-- css -->
 <link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
-<link href="stylesheets/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="stylesheets/jcarousel.css" rel="stylesheet" />
-<link href="stylesheets/flexslider.css" rel="stylesheet" />
 <link href="stylesheets/style.css" rel="stylesheet" />
-
+<link rel="stylesheet" href="stylesheets/profile/green.css" />
+<link rel="stylesheet" href="stylesheets/profile/print.css" media="print"/>
 
 <!-- Theme skin -->
 <link href="stylesheets/skins/default.css" rel="stylesheet" />
@@ -39,8 +37,8 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>       
-                        <li><a href="portfile.html">Profile</a></li>
+                        <li><a href="index.html">Home</a></li>       
+                        <li class="active"><a href="profile.html">Profile</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -49,189 +47,133 @@
         </div>
   </header>
   <!-- end header -->
-  <section id="featured">
-  <!-- start slider -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-  <!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-              <li>
-                <img src="image/slides/1.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Modern Design</h3> 
-          <p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
-          <a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
-              <li>
-                <img src="image/slides/2.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Fully Responsive</h3> 
-          <p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
-          <a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
-              <li>
-                <img src="image/slides/3.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Clean & Fast</h3> 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
-          <a href="#" class="btn btn-theme">Learn More</a>
-                </div>
-              </li>
-            </ul>
-        </div>
-  <!-- end slider -->
-      </div>
-    </div>
-  </div>  
-  </section>
   <section id="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="box">
-              <div class="box-gray aligncenter">
-                <h4>Fully responsive</h4>
-                <div class="icon">
-                <i class="fa fa-desktop fa-3x"></i>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Begin Wrapper -->
+        <div id="wrapper">
+          <div class="wrapper-top"></div>
+          <div class="wrapper-mid">
+            <!-- Begin Paper -->
+            <div id="paper">
+              <div class="paper-top"></div>
+              <div id="paper-mid">
+                <div class="entry">
+                  <!-- Begin Image -->
+                  <img class="portrait" src="image/profile/profile.jpg" alt="Ping Liu" />
+                  <!-- End Image -->
+                  <!-- Begin Personal Information -->
+                  <div class="self">
+                    <h1 class="name">Ping Liu <br />
+                      <span>Web Developer</span></h1>
+                    <ul>
+                      <li>Alsättersgatan 5C LGH 1106 SE-584 35 LINKÖPING</li>
+                      <li>towylp@gmail.com</li>
+                      <li>+46 073 722 73 14</li>
+                      <li>https://github.com/Simon-Lau</li>
+                    </ul>
+                  </div>
+                  <!-- End Personal Information -->
+                  <!-- Begin Social -->
+                  <div class="social">
+                    <ul>
+                      <li><a class='north' href="javascript:window.print()" title="Download .pdf"><i class="fa fa-download"></i></a></li>
+                      <li><a class='north' id="contact" href="https://www.linkedin.com/pub/%E5%B9%B3-%E5%88%98/108/460/940" title="Contact Me"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a class='north' href="https://www.facebook.com/ping.liu.58367" title="Contact Me"><i class="fa fa-facebook"></i></a></li>
+                      <li><a class='north' href="tonylp" title="Contact Me"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                  <!-- End Social -->
                 </div>
-                <p>
-                 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-                </p>
-                  
-              </div>
-              <div class="box-bottom">
-                <a href="#">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="box">
-              <div class="box-gray aligncenter">
-                <h4>Modern Style</h4>
-                <div class="icon">
-                <i class="fa fa-pagelines fa-3x"></i>
+                <!-- Begin 1st Row -->
+                <div class="entry">
+                  <h2>EXPERIENCE</h2>
+                  <div class="content">
+                    <h3>July 2013 - June 2014</h3>
+                    <p>Junior Software Developer <br />
+                      <em>Tecent (Beijing, China)</em></p>
+                    <ul class="info">
+                      <li><p class="text-left">Work as a junior developer and architect to develop part of the backend admin system for Weibo advertisement platform. The system can gather and deal with more than 20,000,000 records every day, and show them in the appropriate form on Website. Design and implement backend monitor system to auto gather, process, monitor and recovery data, Use Crontab, Linux, Hadoop, MySQL, Redis, Apache, PHP, JavaScript, JQuery, Highcharts and Bootstrap.</p></li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <h3>Sep 2012 - Feb 2013</h3>
+                    <p>Web Developer <br />
+                      <em>Lab from School of Software (Harbin, China)</em></p>
+                    <ul class="info">
+                      <li><p class="text-left">Work as a web designer and developer to develop the websites of LJ bank’s backend admin system. More than 20 web pages and load by meeting the specify requirements of page style and authority management. Test (Qunit), optimize (YSlow) and compress (Uglify) JavaScript files. Use Mockup, JavaScript, JQuery, DataTable, JQuery UI and EasyUI.</p></li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <h3>June 2012 - July 2012</h3>
+                    <p>Neusoft(DaLian, China)<br />
+                      <em>Lab from School of Software (Harbin, China)</em></p>
+                    <ul class="info">
+                      <li><p class="text-left">Work as the leader of a project developing Enterprise Material Management including design architecture, develop the base library and process management based on software development cycle. Use starUML, Java, Struts, Spring, Ajax and SQLServer 2008.</p></li>
+                    </ul>
+                  </div>
                 </div>
-                <p>
-                 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-                </p>
-                  
-              </div>
-              <div class="box-bottom">
-                <a href="#">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="box">
-              <div class="box-gray aligncenter">
-                <h4>Customizable</h4>
-                <div class="icon">
-                <i class="fa fa-edit fa-3x"></i>
+                <!-- End 3rd Row -->
+                <!-- Begin 2nd Row -->
+                <div class="entry">
+                  <h2>EDUCATION</h2>
+                  <div class="content">
+                    <h3>Sep 2015 - now</h3>
+                    <p>Linköping University, Sweden<br />
+                      <em>Exchange student in Computer Science</em></p>
+                  </div>
+                  <div class="content">
+                    <h3>Sep 2014 - June 2016</h3>
+                    <p>Harbin Institute of Technology, China<br />
+                      <em>Master in Software Engineering</em></p>
+                  </div>
+                  <div class="content">
+                    <h3>Sep 2010 - June 2014</h3>
+                    <p>Harbin Institute of Technology, China<br />
+                      <em>Bachelor in Software Engineering</em></p>
+                  </div>
                 </div>
-                <p>
-                 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-                </p>
-                  
-              </div>
-              <div class="box-bottom">
-                <a href="#">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="box">
-              <div class="box-gray aligncenter">
-                <h4>Valid HTML5</h4>
-                <div class="icon">
-                <i class="fa fa-code fa-3x"></i>
-                </div>
-                <p>
-                 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-                </p>
-                  
-              </div>
-              <div class="box-bottom">
-                <a href="#">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- divider -->
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="solidline">
-        </div>
-      </div>
-    </div>
-    <!-- end divider -->
-    <!-- Portfolio Projects -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h4 class="heading">Recent Works</h4>
-        <div class="row">
-          <section id="projects">
-          <ul id="thumbs" class="portfolio">
-            <!-- Item Project and Filter Name -->
-            <li class="col-lg-3 design" data-id="id-0" data-type="web">
-            <div class="item-thumbs">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 1" href="image/works/1.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="image/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-            </div>
-            </li>
-            <!-- End Item Project -->
-            <!-- Item Project and Filter Name -->
-            <li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 2" href="image/works/2.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="image/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-            </li>
-            <!-- End Item Project -->
-            <!-- Item Project and Filter Name -->
-            <li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="image/works/3.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="image/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-            </li>
-            <!-- End Item Project -->
-            <!-- Item Project and Filter Name -->
-            <li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
-            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="image/works/4.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-            <!-- Thumb Image and Description -->
-            <img src="image/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-            </li>
-            <!-- End Item Project -->
-          </ul>
-          </section>
-        </div>
-      </div>
-    </div>
+                <!-- End 2nd Row -->
 
-  </div>
+                <!-- Begin 4th Row -->
+                <div class="entry">
+                  <h2>SKILLS</h2>
+                  <div class="content">
+                    <h3>Software Knowledge</h3>
+                    <ul class="skills">
+                      <li>Design Pattern</li>
+                      <li>Algorithms</li>
+                      <li>Software Architecture</li>
+                      <li>Network</li>
+                      <li>DataBase</li>
+                      <li>Software Quality</li>
+                      <li>Computer Graphics</li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <h3>Languages</h3>
+                    <ul class="skills">
+                      <li>JavaScript</li>
+                      <li>CSS/XHTML</li>
+                      <li>PHP</li>
+                      <li>Java</li>
+                      <li>NodeJS</li>
+                      <li>MySQL</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End 4th Row -->
+              </div>
+              <div class="clear"></div>
+              <div class="paper-bottom"></div>
+            </div>
+            <!-- End Paper -->
+          </div>
+          <div class="wrapper-bottom"></div>
+        </div>
+        <div id="message"><a href="#top" id="top-link">Go to Top</a></div>
+        <!-- End Wrapper -->
   </section>
   <footer>
   <div id="sub-footer">
@@ -278,5 +220,8 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript">
+  Cufon.replace('h1,h2');
+</script>
 </body>
 </html>
